@@ -1,3 +1,6 @@
+//tp1 comision:5
+//zoe orellano
+//Legajo:119104/0
 PImage pepper;
 void setup(){
   size(800,400);
