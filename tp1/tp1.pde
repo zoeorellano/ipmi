@@ -4,7 +4,7 @@ PImage miobjetofavorito;
 void setup(){
   size(800, 400);
   background(0);
- miobjetofavorito = loadImage ("miobjetofavorito.jpeg");
+ miobjetofavorito = loadImage ("data/miobjetofavorito.jpeg");
 }
 
 void draw(){
