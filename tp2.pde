@@ -18,7 +18,6 @@ void setup() {
   fighting_force = loadImage("fighting_force.png");
   fighting_force2 = loadImage("fighting_force2.png");
 
-  // Asegurate de que estos archivos estén en la carpeta /data
   Fighting = createFont("Impact-100.ttf", 80);
   Force = createFont("FootlightMTLight-100.ttf", 60);
   PressStart2P = loadFont ("PressStart2P.vlw");
@@ -49,13 +48,16 @@ void draw() {
     fill(255);
     text("© & TH Core Design Limited 1997. \n © Published by Eidos Interactive Limited 1997. \n All Rights Reserved.", 320, 436);  
 
+    //animación de texto central
     if (frameCount % 60 < 30) {
       textFont(VerminVibes);
       fill(255);
       text("Press Start Button", 320, 400);
     }
 
-  } else if (pantalla == 1) {
+  } 
+//pantalla 2
+else if (pantalla == 1) {
     image(fighting_force, 120, 40, 400, 400);
 
     if (textoY < 320) {
@@ -66,6 +68,7 @@ void draw() {
     fill(255);
     text("En un mundo sumido en el caos, un grupo clandestino \n de combatientes se une para enfrentar una red criminal \n que controla la ciudad con puño de hierro.\n Enfrentá enemigos en calles oscuras, fábricas \n abandonadas y laboratorios secretos usando fuerza bruta, \n combos y armas urbanas.", 320, textoY);
 
+   //pantalla2
     if (frameCount - tiempoInicioPantalla2 > duracionPantalla2) {
       pantalla = 2;
     }
