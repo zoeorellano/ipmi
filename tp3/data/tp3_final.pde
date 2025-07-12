@@ -1,3 +1,6 @@
+//IMPI COMISION 2
+//https://youtu.be/4ipe-TnzNIQ
+
 PImage imagen;
 
 int filas = 20;
