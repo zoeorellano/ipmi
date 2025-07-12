@@ -39,8 +39,6 @@ void draw () {
       velocidad = velocidad * -1;
     }
   }
-  //cambiarColor es true con keyPressed
-  // si cambiarColor  Y t 0
   if (cambiarColor && t < 1) {
     t = t + 0.01;
   } else if (!cambiarColor) { 
