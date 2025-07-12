@@ -42,8 +42,8 @@ void draw () {
   //cambiarColor es true con keyPressed
   // si cambiarColor  Y t 0
   if (cambiarColor && t < 1) {
-    t = t + 0.01; //t incrementa en 0.01 esto sirve para hacer el efecto de que baje y suba la mezcla de colores
-  } else if (!cambiarColor) {// es true
+    t = t + 0.01; 
+  } else if (!cambiarColor) {
     t= 0;
   }
 }
@@ -71,7 +71,7 @@ void dibujarTablero (int filas, int columnas, float ejeX, boolean cambiarColor) 
         colorBase = color (0);
       } else {
         if (cambiarColor) {
-          float gradiente = map (fila, 0, filas -1, 0, 1);  // cambia segun el numero de fila, d un valor entre 0 y 1 segun su posicion
+          float gradiente = map (fila, 0, filas -1, 0, 1); 
           color c1 = lerpColor (colorInicio, colorFin, t);
           color c2 = lerpColor (colorFin, colorInicio, t);
           colorBase = generarColorInteractivo ( gradiente, c1, c2);
